@@ -130,5 +130,17 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bt_salvar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_novo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bt_editar menor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bt_excluir menor.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

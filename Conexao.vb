@@ -7,14 +7,13 @@ Module Conexao
         If conexao.State = 0 Then
             conexao.Open()
             MsgBox("Conectado com Sucesso!")
-
         End If
     End Sub
     'Função para fechar a conexão
     Sub fecharConexao()
         If conexao.State = 1 Then
             conexao.Close()
-            MsgBox("Erro ao conectar!")
+            'MsgBox("Erro ao conectar!")
 
         End If
     End Sub

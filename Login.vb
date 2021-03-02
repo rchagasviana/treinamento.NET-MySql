@@ -5,4 +5,9 @@ Public Class Login
         abrirConexao()
         fecharConexao()
     End Sub
+
+    Private Sub btnAcessar_Click(sender As Object, e As EventArgs) Handles btnAcessar.Click
+        Dim form = New frmCategoria
+        form.ShowDialog()
+    End Sub
 End Class
