@@ -6,7 +6,22 @@ Public Class frmCategoria
     End Sub
 
     Private Sub frmCategoria_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Listar()
+    End Sub
 
+    Private Sub Listar()
+        Try
+            abrirConexao()
+            Dim dt As New DataTable
+            Dim da As MySqlDataAdapter
+            Dim sqlListar As String
+            sqlListar = "SELECT idCategoria as Código, descricao as Descrição FROM categorias ORDER BY idCategoria"
+            da = New MySqlDataAdapter(sqlListar, con)
+            da.Fill(dt)
+            dg.DataSource = dt
+        Catch ex As Exception
+            MsgBox("Erro ao listar os dados")
+        End Try
     End Sub
 
     Private Sub btnNovo_Click(sender As Object, e As EventArgs) Handles btnNovo.Click

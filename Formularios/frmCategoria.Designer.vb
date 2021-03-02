@@ -28,12 +28,12 @@ Partial Class frmCategoria
         Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtCodigo = New System.Windows.Forms.TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dg = New System.Windows.Forms.DataGridView()
         Me.btnExcluir = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnSalvar = New System.Windows.Forms.Button()
         Me.btnNovo = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dg, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -76,14 +76,14 @@ Partial Class frmCategoria
         Me.txtCodigo.Size = New System.Drawing.Size(43, 20)
         Me.txtCodigo.TabIndex = 4
         '
-        'DataGridView1
+        'dg
         '
-        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(14, 133)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(619, 162)
-        Me.DataGridView1.TabIndex = 5
+        Me.dg.BackgroundColor = System.Drawing.SystemColors.ButtonFace
+        Me.dg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dg.Location = New System.Drawing.Point(14, 133)
+        Me.dg.Name = "dg"
+        Me.dg.Size = New System.Drawing.Size(619, 162)
+        Me.dg.TabIndex = 5
         '
         'btnExcluir
         '
@@ -151,7 +151,7 @@ Partial Class frmCategoria
         Me.Controls.Add(Me.btnEditar)
         Me.Controls.Add(Me.btnSalvar)
         Me.Controls.Add(Me.btnNovo)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dg)
         Me.Controls.Add(Me.txtCodigo)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtBuscar)
@@ -163,7 +163,7 @@ Partial Class frmCategoria
         Me.Name = "frmCategoria"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Categorias"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dg, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -174,7 +174,7 @@ Partial Class frmCategoria
     Friend WithEvents txtBuscar As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents txtCodigo As TextBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dg As DataGridView
     Friend WithEvents btnNovo As Button
     Friend WithEvents btnSalvar As Button
     Friend WithEvents btnEditar As Button

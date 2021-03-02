@@ -6,7 +6,7 @@ Module Conexao
     Sub abrirConexao()
         If con.State = 0 Then
             con.Open()
-            MsgBox("Conectado com Sucesso!")
+            'MsgBox("Conectado com Sucesso!")
         End If
     End Sub
     'Função para fechar a conexão
