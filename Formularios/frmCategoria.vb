@@ -30,6 +30,7 @@ Public Class frmCategoria
         txtDescricao.Text = "" 'Limpa o campo
     End Sub
 
+    'Rotina para salvar categorias
     Private Sub btnSalvar_Click(sender As Object, e As EventArgs) Handles btnSalvar.Click
         If txtDescricao.Text <> "" Then
             Try
@@ -45,6 +46,11 @@ Public Class frmCategoria
             Catch ex As Exception
                 MsgBox("Erro ao salvar!")
             End Try
+            'DESATIVAR O BTNSALVAR APÓS INSERIR NA BASE DE DADOS
+            btnSalvar.Enabled = False
+            Listar() 'APÓS SALVAR O REGISTRO, OS DADOS SÃO PESQUISADOS E A DATAGRID É ATUALIZADA PARA MOSTRAR O ÚLTIMO DADO INSERIDO
+            txtDescricao.Text = ""
+            txtDescricao.Enabled = False
         Else
             MsgBox("Não deixe o texto descrição vazio!")
         End If
