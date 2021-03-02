@@ -47,6 +47,7 @@ Partial Class frmCategoria
         '
         'txtDescricao
         '
+        Me.txtDescricao.Enabled = False
         Me.txtDescricao.Location = New System.Drawing.Point(78, 70)
         Me.txtDescricao.Name = "txtDescricao"
         Me.txtDescricao.Size = New System.Drawing.Size(132, 20)
@@ -88,7 +89,10 @@ Partial Class frmCategoria
         '
         Me.btnExcluir.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.btnExcluir.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.bt_excluir_menor
+        Me.btnExcluir.Enabled = False
         Me.btnExcluir.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke
+        Me.btnExcluir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnExcluir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnExcluir.Location = New System.Drawing.Point(417, 315)
         Me.btnExcluir.Name = "btnExcluir"
@@ -100,6 +104,9 @@ Partial Class frmCategoria
         '
         Me.btnEditar.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.btnEditar.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.bt_editar_menor
+        Me.btnEditar.Enabled = False
+        Me.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnEditar.Location = New System.Drawing.Point(320, 315)
         Me.btnEditar.Name = "btnEditar"
@@ -111,6 +118,9 @@ Partial Class frmCategoria
         '
         Me.btnSalvar.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.btnSalvar.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.bt_salvar
+        Me.btnSalvar.Enabled = False
+        Me.btnSalvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnSalvar.Location = New System.Drawing.Point(218, 315)
         Me.btnSalvar.Name = "btnSalvar"
@@ -122,6 +132,8 @@ Partial Class frmCategoria
         '
         Me.btnNovo.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.btnNovo.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.btn_novo
+        Me.btnNovo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnNovo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnNovo.Location = New System.Drawing.Point(118, 315)
         Me.btnNovo.Name = "btnNovo"
